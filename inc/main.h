@@ -29,6 +29,7 @@ extern "C" {
 
 /* Exported functions prototypes ---------------------------------------------*/
 void Error_Handler(void);
+void SystemClock_Config(void);
 
 /* Private defines -----------------------------------------------------------*/
 #define USER_Btn_Pin GPIO_PIN_13
@@ -81,6 +82,8 @@ void Error_Handler(void);
 #define SWO_GPIO_Port GPIOB
 #define LD2_Pin GPIO_PIN_7
 #define LD2_GPIO_Port GPIOB
+#define DIGITAL_TEST_1_Pin GPIO_PIN_14
+#define DIGITAL_TEST_1_Port GPIOD
 
 #ifdef __cplusplus
 }

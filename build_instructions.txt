@@ -1,3 +1,2 @@
 add gnu make 3.81 to the path somewhere
 Install the gnu arm toolchain
-cmd make

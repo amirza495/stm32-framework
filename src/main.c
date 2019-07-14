@@ -6,10 +6,20 @@
  */
 #include "stm32f7xx_hal.h"
 #include "stm32f767xx.h"
+#include "gpio_api.h"
+#include "main.h"
 
 int main(void){
 
     /* MCU Configuration--------------------------------------------------------*/
+
+    GPIO_Pin TestPin;
+    TestPin.port = DIGITAL_TEST_1_Port;
+    TestPin.pin = DIGITAL_TEST_1_Pin;
+
+    uint32_t i = 0;
+
+    SystemInit();
 
     /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
     HAL_Init();
@@ -22,9 +32,20 @@ int main(void){
 
 
     while(1){
+      GPIO_Write(TestPin, 1);
+
+      HAL_Delay(10);
+
+      GPIO_Write(TestPin, 0);
+
 
     }
 
+}
+
+void HAL_SYSTICK_Callback( void )
+{
+	HAL_IncTick();
 }
 
 /**

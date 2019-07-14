@@ -202,7 +202,7 @@ typedef enum
 
 
 #include "system_stm32f7xx.h"
-#include <stdint.h>
+#include "stdint.h"
 
 /** @addtogroup Peripheral_registers_structures
   * @{

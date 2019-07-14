@@ -256,9 +256,10 @@
     #define __RESTRICT
   #endif
 
+#elif WINDOWS
 
 #else
-  #error Unknown compiler.
+  //#error Unknown compiler.
 #endif
 
 

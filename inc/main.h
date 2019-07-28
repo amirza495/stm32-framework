@@ -83,7 +83,7 @@ void SystemClock_Config(void);
 #define LD2_Pin GPIO_PIN_7
 #define LD2_GPIO_Port GPIOB
 #define DIGITAL_TEST_1_Pin GPIO_PIN_14
-#define DIGITAL_TEST_1_Port GPIOD
+#define DIGITAL_TEST_1_Port GPIOB
 
 #ifdef __cplusplus
 }

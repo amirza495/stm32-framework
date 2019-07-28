@@ -32,19 +32,22 @@ int main(void){
 
 
     while(1){
+      
       GPIO_Write(TestPin, 1);
 
-      HAL_Delay(10);
+      HAL_Delay(500);
 
       GPIO_Write(TestPin, 0);
+
+      HAL_Delay(500);
 
 
     }
 
 }
 
-void HAL_SYSTICK_Callback( void )
-{
+
+void SysTick_Handler(void){
 	HAL_IncTick();
 }
 
